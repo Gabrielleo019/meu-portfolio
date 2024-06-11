@@ -174,15 +174,17 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form method="post" action="enviaemail.php" >
+                <form action="https://api.staticforms.xyz/submit" method="post" >
                     <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-                    <input type="text" name="email" id="email" placeholder="Seu nome e-mail" required>
+                    <input type="email" name="email" id="email" placeholder="Seu nome e-mail" required>
                     <input type="text" name="celular" id="celular" placeholder="Seu celular">
 
-                    <textarea name="message" id="" placeholder="Sua mensagem" required></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
 
                     <div class="btn-enviar"><input type="submit" class="ENVIAR"></div>
                     
+                    <input type="hidden" name="accessKey" value="302814e3-1fdb-4240-93a6-2d362578f9c7">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                 </form>
             </div><!--interface-->
         </section><!--formulario-->
