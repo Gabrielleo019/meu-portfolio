@@ -49,8 +49,8 @@ h2.titulo span {
 
 .logo i,
 .logo-footer i {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     background: transparent;
     border: 1px solid #D00000;
     color: #D00000;
@@ -60,7 +60,15 @@ h2.titulo span {
     justify-content: center;
     font-size: 13px;
     cursor: pointer;
+    font-size: 30px;
 }
+
+.btn-social i, .btn-social-footer i{
+    color: #D00000;
+    padding: 15px;
+    font-size: 25px;
+}
+
 /*ESTILO CABEÇALHO*/
 
 
@@ -81,7 +89,7 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #fff;
     transform: scale(1.05);
 }
@@ -90,12 +98,77 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
+/* ESTILO DO MENU MOBILE */
+.btn-abrir-menu{
+    display: none;
+}
 
+.btn-abrir-menu i{
+    color: #D00000;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #D00000;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #D00000;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000af;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
 
 /* ESTILO DO TOPO DO SITE*/
 section.topo-do-site {
@@ -124,10 +197,6 @@ section.topo-do-site .flex {
     margin: 40px 0;
 }
 
-.btn-social i {
-    color: #D00000;
-    padding: 20px;
-}
 
 .topo-do-site .img-topo-site img {
     position: relative;
@@ -351,11 +420,19 @@ footer .line-footer p a {
         line-height: 30px;
     }
 
+    /* MENU MOBILE */
+    .btn-abrir-menu{
+        display: block;
+    }
+
     /*CABEÇALHO*/
     .menu-desktop,
     .btn-contato {
         display: none;
     }
+
+    
+    
 
     /*TOPO DO SITE*/
 
@@ -422,12 +499,23 @@ footer .line-footer p a {
 
     /*RODAPÉ*/
 
-    footer.flex{
+    footer .flex{
         flex-direction: column;
         gap: 30px;
     }
 
-    footer.line-footer {
+    footer .line-footer {
         text-align: center;
     }
+
+    .logo-footer i {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+}
+
+    .btn-social-footer i{
+        font-size: 23px;
+    }
+
 }

@@ -20,32 +20,58 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--FONTAWESOME-->
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>Gabriel Leonardo</title>
 </head>
 
 <body>
 
     <header>
-        <div class="interface">
+        <div class="interface" id="inicio">
             <div class="logo">
                 <i class="fa-regular fa-g"></i>
             </div><!--logo-->
 
-            <nav class="menu-desktop">
+            <nav class="menu-desktop" >
                 <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="curriculo/Currículo2024.pdf " target="_blank" rel="noopener noreferrer">Curriculo</a>
-                    </li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="curriculo/Currículo2024.pdf " target="_blank" rel="noopener noreferrer">Curriculo</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
                 </ul>
-            </nav>
+            </nav><!--menu-desktop-->
 
             <div class="btn-contato">
                 <a href="#">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="curriculo/Currículo2024.pdf " target="_blank" rel="noopener noreferrer">Curriculo</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--interface-->
     </header>
 
@@ -106,7 +132,7 @@
             </div><!--interface-->
         </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -124,7 +150,7 @@
             </div><!--interface-->
         </section><!--sobre-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -148,12 +174,15 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo" required>
-                    <input type="text" name="" id="" placeholder="Seu nome e-mail" required>
-                    <input type="text" name="" id="" placeholder="Seu celular">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form method="post" action="enviaemail.php" >
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+                    <input type="text" name="email" id="email" placeholder="Seu nome e-mail" required>
+                    <input type="text" name="celular" id="celular" placeholder="Seu celular">
+
+                    <textarea name="message" id="" placeholder="Sua mensagem" required></textarea>
+
                     <div class="btn-enviar"><input type="submit" class="ENVIAR"></div>
+                    
                 </form>
             </div><!--interface-->
         </section><!--formulario-->
@@ -166,7 +195,7 @@
                     <div class="logo-footer">
                         <i class="fa-regular fa-g"></i>
                     </div><!--logo-footer-->
-                    <div class="btn-social">
+                    <div class="btn-social-footer">
                         <a href="https://www.instagram.com/gabriel_leo019/" target="_blank" rel="noopener noreferrer"><i
                                 class="bi bi-instagram"></i></i></a>
                         <a href="https://github.com/Gabrielleo019" target="_blank" rel="noopener noreferrer"><i
@@ -180,7 +209,7 @@
             </div><!--line-footer-->
 
             <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gabrielcadeira305@gmail.com">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gabrielcadeira306@gmail.com">
                         gabrielcadeira305@gmail.com</a></p>
             </div><!--line-footer-->
         </div><!--interface-->
