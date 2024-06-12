@@ -63,7 +63,8 @@ h2.titulo span {
     font-size: 30px;
 }
 
-.btn-social i, .btn-social-footer i{
+.btn-social i,
+.btn-social-footer i {
     color: #D00000;
     padding: 15px;
     font-size: 25px;
@@ -104,16 +105,16 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILO DO MENU MOBILE */
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
-.btn-abrir-menu i{
+.btn-abrir-menu i {
     color: #D00000;
-    font-size: 40px;
+    font-size: 60px;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: #000000;
     height: 100vh;
     position: fixed;
@@ -125,41 +126,41 @@ header nav.menu-desktop ul li {
     transition: .2s;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar i{
+.menu-mobile .btn-fechar i {
     color: #D00000;
-    font-size: 30px;
+    font-size: 50px;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #D00000;
     color: #000;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #000000af;
     width: 100%;
     height: 100%;
@@ -297,7 +298,7 @@ section.portfolio .flex {
     width: 360px;
     height: 460px;
     background-size: cover;
-    background-position: 100% 0%;
+    background-position: 0% 100%;
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
@@ -420,8 +421,10 @@ footer .line-footer p a {
         line-height: 30px;
     }
 
+
+
     /* MENU MOBILE */
-    .btn-abrir-menu{
+    .btn-abrir-menu {
         display: block;
     }
 
@@ -431,8 +434,8 @@ footer .line-footer p a {
         display: none;
     }
 
-    
-    
+
+
 
     /*TOPO DO SITE*/
 
@@ -452,32 +455,36 @@ footer .line-footer p a {
         width: 100%;
     }
 
+    .btn-social {
+        text-align: center;
+        font-size: 45px;
+    }
+
     /*ESPECIALIDADES*/
 
     section.especialidades {
         padding: 40px 8%;
     }
 
+
+
     /*SOBRE*/
 
-    .sobre .interface{
+    .sobre .interface {
         flex-direction: column-reverse;
     }
+
     section.sobre {
         padding: 80px 8%;
     }
 
-    .sobre .txt-sobre{
+    .sobre .txt-sobre {
         font-size: 34px;
         line-height: 35px;
         text-align: center;
     }
 
-    .btn-social {
-        text-align: center;
-    }
-
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
     }
 
@@ -486,20 +493,20 @@ footer .line-footer p a {
     section.portfolio {
         padding: 80px 8%;
     }
-    
-    .img-port{
+
+    .img-port {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
     }
 
-    section.portfolio .flex{
+    section.portfolio .flex {
         gap: 60px;
     }
 
     /*RODAPÉ*/
 
-    footer .flex{
+    footer .flex {
         flex-direction: column;
         gap: 30px;
     }
@@ -509,13 +516,14 @@ footer .line-footer p a {
     }
 
     .logo-footer i {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-}
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
 
-    .btn-social-footer i{
-        font-size: 23px;
+    .btn-social-footer i {
+        font-size: 45px;
     }
 
 }
+
