@@ -495,8 +495,8 @@ footer .line-footer p a {
     }
 
     .img-port {
-        width: 100%;
-        max-width: 360px;
+        width: calc(100% - 40px);
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -516,13 +516,13 @@ footer .line-footer p a {
     }
 
     .logo-footer i {
-        height: 60px;
-        width: 60px;
-        font-size: 30px;
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
     }
 
     .btn-social-footer i {
-        font-size: 45px;
+        font-size: 30px;
     }
 
 }
