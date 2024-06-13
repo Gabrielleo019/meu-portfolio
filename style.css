@@ -495,8 +495,8 @@ footer .line-footer p a {
     }
 
     .img-port {
-        width: calc(100% - 40px);
-        max-width: 100%;
+        width: 100%;
+        max-width: 360px;
         margin: 0 auto;
     }
 
