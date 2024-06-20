@@ -405,6 +405,17 @@ footer .line-footer p a {
     color: #fff;
 }
 
+/*BARRA DE SCROLL*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D00000;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1020px) {
 
     /*CLASSES GERAIS*/
@@ -479,7 +490,7 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre {
-        font-size: 34px;
+        font-size: 24px;
         line-height: 35px;
         text-align: center;
     }
